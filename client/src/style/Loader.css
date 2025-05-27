@@ -1,0 +1,30 @@
+/* Loader.css */
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+      border-color: #f00; /* Start with red */
+    }
+    25% {
+      border-color: #0f0; /* Change to green */
+    }
+    50% {
+      border-color: #00f; /* Change to blue */
+    }
+    75% {
+      border-color: #ff0; /* Change to yellow */
+    }
+    100% {
+      transform: rotate(360deg);
+      border-color: #f00; /* End with red */
+    }
+  }
+  
+  .spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spinner 1.2s linear infinite;
+  }
+  
